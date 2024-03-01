@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body {
+  font-family: Poppins;
+  width: 100%;
+  background-color: black;
+}
+
+.header {
+  width: 100%;
+  padding: 39px 0 0 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+}
+
+.header-nav-btn {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-btn-link {
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+.nav-btn-link:hover {
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header-text {
+  color: rgb(255, 255, 255);
+}
+
+.header-message {
+  width: 330px;
+  margin-top: 131px;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 9px 15px 9px 5px;
+  border-radius: 200px;
+  background-color: #252222;
+}
+.header-message::before {
+  content: "NEW";
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 200px;
+  background: rgb(37, 171, 117);
+  margin-right: 15px;
+}
+
+.header-title {
+  width: 814px;
+  font-size: 200px;
+  font-weight: 600;
+  line-height: 170px;
+  letter-spacing: -2px;
+  margin-top: 31px;
+}
+
+.header-subtext {
+  width: 600px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  opacity: 0.5;
+  margin: 42px 0 74px 0;
+}
+
+.link-green {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px 43px;
+  border-radius: 10px;
+  background: rgb(37, 171, 117);
+  position: relative;
+  overflow: hidden;
+}
+.link-green:after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  background: #fff;
+  height: 144px;
+  left: -75px;
+  opacity: 0.3;
+  top: -51px;
+  transform: rotate(35deg);
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 40px;
+}
+.link-green:hover:after {
+  left: 120%;
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header-link-black {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px 43px;
+  border-radius: 10px;
+  background: #252222;
+  margin-left: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.header-link-black:after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  background: #fff;
+  height: 144px;
+  left: -75px;
+  opacity: 0.3;
+  top: -51px;
+  transform: rotate(35deg);
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 40px;
+}
+.header-link-black:hover:after {
+  left: 120%;
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header-img {
+  position: absolute;
+  top: 149px;
+  left: 597px;
+}
+
+.header-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.header-block {
+  width: 166px;
+  border-radius: 20px;
+  background-color: #252222;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.header-block__yellow {
+  color: rgb(255, 230, 66);
+}
+.header-block__yellow::after {
+  content: "TIME";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+}
+
+.header-block__red {
+  color: rgb(251, 19, 81);
+}
+.header-block__red::after {
+  content: "EST CALORIES";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+}
+
+.exersises {
+  padding: 214px 0 200px 0;
+}
+
+.exersises-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exersises-title {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: rgb(255, 255, 255);
+}
+
+.exersises-more {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  z-index: 30;
+  height: 12px;
+  transition: all 0.5s;
+}
+.exersises-more:hover {
+  letter-spacing: 4px;
+}
+
+.exersises-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 672px;
+  margin-top: 50px;
+}
+
+.exersises-card {
+  width: 373px;
+  transition: all 0.4s;
+}
+.exersises-card:hover {
+  scale: 1.15;
+}
+
+.exersises-card-inner {
+  color: #fff;
+  position: relative;
+}
+.exersises-card-inner::after {
+  content: "58:24";
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+  background: rgb(0, 0, 0);
+  border-radius: 12px;
+  position: absolute;
+  top: 221px;
+  left: 308px;
+  color: #fff;
+  text-align: left;
+}
+
+.card-img {
+  border-radius: 10px;
+}
+
+.card-name {
+  font-size: 50px;
+  font-weight: 600;
+  margin: -28px 0 0 20px;
+}
+
+.card-subtext {
+  margin: 15px 0 0 20px;
+  opacity: 0.67;
+}
+
+.program {
+  position: relative;
+}
+.program::before {
+  content: url(../images/grey-bg.png);
+  width: 1000px;
+  height: 733px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.program-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 50px 0;
+}
+
+.program-title {
+  width: 523px;
+  color: rgb(255, 255, 255);
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 120px;
+  letter-spacing: -2px;
+  position: relative;
+}
+.program-title::after {
+  content: url(../images/yellow-spot.png);
+  width: 505px;
+  height: 122px;
+  position: absolute;
+  top: 411px;
+  left: 0;
+  transform: rotate(-10deg);
+  z-index: -1;
+}
+
+.program-inner {
+  width: 558px;
+  margin-top: 30px;
+}
+
+.program-text {
+  width: 558px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  opacity: 0.7;
+  margin-bottom: 74px;
+}
+
+.people {
+  margin-bottom: 955px;
+}
+
+.people-container {
+  position: relative;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.img-name {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 12px 0 5px 0;
+}
+
+.img__indent {
+  margin-left: 12px;
+}
+
+.img-subname {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.people-img__picture1 {
+  position: absolute;
+  top: -63px;
+  right: 0;
+}
+
+.people-img__picture2 {
+  position: absolute;
+  top: 130px;
+  left: 0;
+}
+
+.people-img__picture3 {
+  position: absolute;
+  top: 450px;
+  left: 321px;
+}
+
+.videos {
+  padding-bottom: 143px;
+}
+
+.video-item {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+  align-items: center;
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: all 0.5s;
+}
+.video-item:last-child {
+  border-bottom: none;
+}
+.video-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  padding: 50px 5px;
+}
+.video-item:hover .text {
+  scale: 1.1;
+}
+
+.video-number {
+  font-size: 25px;
+  opacity: 0.34;
+  font-weight: 600;
+}
+
+.text {
+  text-align: left;
+  width: 485px;
+  transition: all 0.5s;
+}
+
+.video-title {
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0.83px;
+}
+
+.video-subtext {
+  letter-spacing: 0.5px;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}/*# sourceMappingURL=main.css.map */
