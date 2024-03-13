@@ -2,25 +2,31 @@
 
 body{
     font-family: Poppins;
-    width: 100%;
     background-color: black;
+    height: auto;
+    width: auto;
 }
 
 // HEADER
 
 .header{
-    width: 100%;
-    padding: 39px 0 0 0;
+    // margin: 39px 0 0 0;
+    margin-top: clamp(1.063rem, -1.215rem + 4.75vw, 2.438rem) ;
+}
+.header-container{
+    position: relative;
 }
 .container {
-    width: 1200px;
+    max-width: 1230px;
     margin: auto;
+    padding: 0 15px 0 15px;
 }
 .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .logo {
     font-size: 18px;
@@ -34,6 +40,42 @@ body{
     gap: 50px;
 }
 
+.burger {
+    background-color: transparent;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    color: #FFF;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0;
+    
+        width: 40px;
+        height: 2px;
+        background-color: #FFF;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+    
+        width: 40px;
+        height: 2px;
+        background-color: #FFF;
+    }
+    span {
+        display: block;
+        width: 40px;
+        height: 1.5px;
+        background-color: #FFF;
+    }
+    display: none;
+}
+ 
+    
 .nav-btn-link{
     letter-spacing: 1.2px;
     font-size: 12px;
@@ -47,8 +89,6 @@ body{
 }
 .header-inner {
     display: flex;
-    justify-content: space-between;
-    position: relative;
 }
 
 .header-text {
@@ -56,51 +96,66 @@ body{
 }
 
 .header-message {
-    width: 330px;
-    margin-top: 131px;
-    font-size: 12px;
+    width: max-content;
+    margin: clamp(1.25rem, -1.621rem + 12.76vw, 8.188rem) 0 clamp(0.438rem, -0.183rem + 2.76vw, 1.938rem) 0;
+    // font-size: 12px;
+    font-size: clamp(0.438rem, 0.284rem + 0.77vw, 0.875rem);
     font-weight: 400;
-    padding: 9px 15px 9px 5px;
+    // padding: 9px 15px 9px 5px;
+    padding: clamp(0.313rem, 0.222rem + 0.45vw, 0.563rem) clamp(0.5rem, 0.341rem + 0.8vw, 0.938rem) clamp(0.313rem, 0.222rem + 0.45vw, 0.563rem) 5px ;
     border-radius: 200px;
     background-color: #252222;
     &::before{
         content: "NEW";
-        font-size: 10px;
+        // font-size: 10px;
+        font-size: clamp(0.438rem, 0.369rem + 0.34vw, 0.625rem);
         font-weight: 600;
-        padding: 4px 10px;
+        // padding: 4px 10px;
+        padding: clamp(0.125rem, 0.08rem + 0.23vw, 0.25rem) clamp(0.438rem, 0.369rem + 0.34vw, 0.625rem) ;
         border-radius: 200px;
         background: rgb(37, 171, 117);
-        margin-right: 15px;
+        // margin-right: 15px;
+        margin-right: clamp(0.438rem, 0.256rem + 0.91vw, 0.938rem);
+
     }
 }
 
 .header-title {
-    width: 814px;
-    font-size: 200px;
+    max-width: 814px;
+    // font-size: 200px;
+    font-size: clamp(3.125rem, -0.754rem + 17.24vw, 12.5rem);
     font-weight: 600;
-    line-height: 170px;
+    // line-height: 170px;
+    line-height: clamp(2.688rem, -0.597rem + 14.6vw, 10.625rem);
     letter-spacing: -2px;
-    margin-top: 31px;
 }
 
 .header-subtext {
-    width: 600px;   
-    font-size: 16px;
+    max-width: 600px;  
+    max-width: clamp(9.375rem, -0.515rem + 49.45vw, 37.5rem); 
+    // font-size: 16px;
+    font-size: clamp(0.375rem, 0.155rem + 1.1vw, 1rem);
     font-weight: 400;
-    line-height: 29px;
+    // line-height: 29px;
+    line-height: clamp(0.5rem, 0.023rem + 2.39vw, 1.813rem);
     letter-spacing: 0.5px;
     opacity: .5;
-    margin: 42px 0 74px 0;
+    // margin: 42px 0 74px 0;
+    margin: clamp(0.5rem, -0.247rem + 3.74vw, 2.625rem) 0 clamp(0.875rem, -0.444rem + 6.59vw, 4.625rem) 0;
 }
 
 .link-green {
     display: inline-block;
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: clamp(0.5rem, 0.258rem + 1.21vw, 1.188rem);
     font-weight: 600;
-    padding: 24px 43px;
-    border-radius: 10px;
+    // padding: 24px 43px;
+    padding: 8px 10px;
+    padding: clamp(0.5rem, 0.148rem + 1.76vw, 1.5rem) clamp(0.625rem, -0.1rem + 3.63vw, 2.688rem);
+    // border-radius: 10px;
+    border-radius: clamp(0.313rem, 0.203rem + 0.55vw, 0.625rem);
     background: rgb(37, 171, 117);
     position: relative;
     overflow: hidden;
@@ -129,12 +184,16 @@ body{
     display: inline-block;
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: clamp(0.5rem, 0.258rem + 1.21vw, 1.188rem);
     font-weight: 600;
-    padding: 24px 43px;
-    border-radius: 10px;
+    // padding: 24px 43px;
+    padding: clamp(0.5rem, 0.148rem + 1.76vw, 1.5rem) clamp(0.625rem, -0.1rem + 3.63vw, 2.688rem);
+    // border-radius: 10px;
+    border-radius: clamp(0.313rem, 0.203rem + 0.55vw, 0.625rem);
     background: #252222;
-    margin-left: 30px;
+    // margin-left: 30px;
+    margin-left: clamp(0.313rem, -0.237rem + 2.75vw, 1.875rem);
     position: relative;
     overflow: hidden;
 
@@ -159,38 +218,53 @@ body{
         }
 }
 
+.header-img-wrapper{
+    position: relative;
+    width: 492px;
+}
 .header-img {
     position: absolute;
-    top: 149px;
-    left: 597px;
+    top: 0;
+    right: 0;
+    top: clamp(1.25rem, -2.43rem + 18.4vw, 9.875rem);
+    right: clamp(0.625rem, -0.575rem + 6vw, 3.438rem);
+    max-width: 130%;
 }
-
-.header-blocks {
+.blocks{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    // top: 256px;
+    top: clamp(6.125rem, -0.639rem + 21.64vw, 16rem);
+    right: 15px;
 }
 
 .header-block {
-    width: 166px;
-    border-radius: 20px;
+    max-width: 166px;
+    // border-radius: 20px;
+    border-radius: clamp(0.5rem, 0.236rem + 1.32vw, 1.25rem);
     background-color: #252222;
-    font-size: 40px;
+    // font-size: 10px;
+    font-size: clamp(0.625rem, -0.034rem + 3.3vw, 2.5rem);
     font-weight: 600;
-    line-height: 40px;
+    // line-height: 40px;
+    line-height: clamp(0.5rem, -0.203rem + 3.52vw, 2.5rem);
     letter-spacing: 1px;
     display: flex;
     flex-direction: column;
-    padding: 20px 30px;
+    // padding: 20px 30px;
+    padding: clamp(0.5rem, 0.236rem + 1.32vw, 1.25rem) clamp(0.625rem, 0.185rem + 2.2vw, 1.875rem) ;
 }
 .header-block__yellow{
     color: rgb(255, 230, 66);
     &::after{
         content: "TIME";
-        font-size: 13px;
+        // font-size: 13px;
+        font-size: clamp(0.438rem, 0.306rem + 0.66vw, 0.813rem);
         font-weight: 400;
         line-height: 13px;
+        line-height: clamp(0.438rem, 0.306rem + 0.66vw, 0.813rem);
         letter-spacing: 1px;
         color: rgb(255, 255, 255);
         margin-top: 5px;
@@ -200,9 +274,11 @@ body{
     color: rgb(251, 19, 81);
     &::after {
         content: "EST CALORIES";
-        font-size: 13px;
+        // font-size: 13px;
+        font-size: clamp(0.438rem, 0.306rem + 0.66vw, 0.813rem);
         font-weight: 400;
-        line-height: 20px;
+        // line-height: 20px;
+        line-height: clamp(0.625rem, 0.405rem + 1.1vw, 1.25rem);
         letter-spacing: 1px;
         color: rgb(255, 255, 255);
         margin-top: 5px;
@@ -210,8 +286,21 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .exersises{
-    padding: 214px 0 200px 0;
+    // margin: 214px 0 200px 0;
+    margin: clamp(2.813rem, -0.902rem + 18.57vw, 13.375rem) 0 clamp(3.75rem, 0.017rem + 18.67vw, 12.5rem) 0;
 }
 
 .exersises-top {
@@ -222,7 +311,8 @@ body{
 }
 
 .exersises-title {
-    font-size: 35px;
+    // font-size: 35px;
+    font-size: clamp(0.75rem, 0.245rem + 2.53vw, 2.188rem);
     font-weight: 600;
     letter-spacing: 0.3px;
     color: rgb(255, 255, 255);
@@ -230,7 +320,8 @@ body{
 
 .exersises-more {
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    // font-size: 12px;
+    font-size: clamp(0.375rem, 0.243rem + 0.66vw, 0.75rem);
     font-weight: 400;
     letter-spacing: 1.5px;
     z-index: 30;
@@ -242,16 +333,15 @@ body{
     }
 }
 .exersises-cards {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 672px;
     margin-top: 50px;
 }
 
 .exersises-card {
-    width: 373px;
+    max-width: 373px;
     transition: all .4s;
     &:hover{
         scale: 1.15;
@@ -261,18 +351,21 @@ body{
 .exersises-card-inner{
     color: #fff;
     position: relative;
+    max-width: 373px;
     &::after {
         content: "58:24";
-        font-size: 20px;
+        // font-size: 20px;
+        font-size: clamp(0.5rem, 0.236rem + 1.32vw, 1.25rem);
         font-weight: 600;
-        padding: 10px 10px 10px 10px;
+        // padding: 10px;
+        padding: clamp(0.188rem, 0.034rem + 0.77vw, 0.625rem);
         background: rgb(0, 0, 0);
-        border-radius: 12px;
+        // border-radius: 12px;
+        border-radius: clamp(0.188rem, -0.01rem + 0.99vw, 0.75rem);
         position: absolute;
-        top: 221px;
-        left: 308px;
+        top: 225px;
+        left: 317px;
         color: #fff;
-        text-align: left;
     }
 }
 
@@ -283,21 +376,48 @@ body{
 .card-name {
     font-size: 50px;
     font-weight: 600;
-    margin: -28px 0 0 20px;
+    // margin: -28px 0 0 20px;
+    margin: clamp(-1.75rem, -1.97rem + 1.1vw, -1.125rem) 0 0 clamp(0.5rem, 0.236rem + 1.32vw, 1.25rem);
 }
 
 .card-subtext {
-    margin: 15px 0 0 20px;
+    // margin: 15px 0 0 20px;
+    margin: clamp(0.5rem, 0.346rem + 0.77vw, 0.938rem) 0 0 clamp(0.5rem, 0.346rem + 0.77vw, 0.938rem);
     opacity: 0.67;
+    // font-size: 13px;
+    font-size: clamp(0.25rem, 0.052rem + 0.99vw, 0.813rem);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // program
 
 .program{
     position: relative;
     &::before{
-        content: url(../images/grey-bg.png);
-        width: 1000px;
+        content: '';
+        background-color: #2e2c2c;
+        max-width: 1000px;
         height: 733px;
         position: absolute;
         top: 0;
@@ -310,51 +430,83 @@ body{
 .program-container {
     display: flex;
     justify-content: space-between;
-    padding: 100px 0 50px 0 ;
+    // padding: 100px 15px 50px 15px ;
+    padding-top: clamp(1.875rem, 0.337rem + 7.69vw, 6.25rem) ;
+    padding-bottom: clamp(0.625rem, -0.254rem + 4.4vw, 3.125rem);
+    align-items: center;
+    position: relative;
     
 }
 
 .program-title {
-    width: 523px;
+    max-width: 510px;
     color: rgb(255, 255, 255);
-    font-size: 120px;
+    // font-size: 120px;
+    font-size: clamp(2.188rem, 0.319rem + 9.34vw, 7.5rem);
     font-weight: 600;
-    line-height: 120px;
+    // line-height: 120px;
+    line-height: clamp(2.5rem, 0.367rem + 10.67vw, 7.5rem);
     letter-spacing: -2px;
     position: relative;
-    &::after {
-        content: url(../images/yellow-spot.png);
-        width: 505px;
-        height: 122px;
-        position: absolute;
-        top: 411px;
-        left: 0;
-        transform: rotate(-10.00deg);
-        z-index: -1;
-    }
-    
 }
 
 .program-inner {
-    width: 558px;
-    margin-top: 30px;
+    max-width: 558px;
+    // margin-top: 30px;
+    margin-top: clamp(0rem, -0.659rem + 3.3vw, 1.875rem);
+    padding-left: 30px;
 }
 
 .program-text {
-    width: 558px;
+    max-width: 558px;
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    // font-size: 25px;
+    font-size: clamp(0.625rem, 0.295rem + 1.65vw, 1.563rem);
     font-weight: 400;
-    line-height: 50px;
+    // line-height: 50px;
+    line-height: clamp(0.5rem, -0.62rem + 5.6vw, 3.125rem);
     letter-spacing: 0.5px;
     opacity: 0.7;
-    margin-bottom: 74px;
+    // margin-bottom: 74px;
+    margin-bottom: clamp(1.438rem, 0.317rem + 5.6vw, 4.625rem);
 }
+.program-img-wrapper{
+    max-width: 600px;
+    position: absolute;
+    top: 445px;
+    left: 0;
+    z-index: -2;
+    transform: rotate(-10.00deg);
+}
+.program-img{
+    width: 100%;
+    padding-left:15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // img-people
 
 .people{
-    margin-bottom: 955px;
+    // margin-bottom: 290px;
+    margin-bottom: clamp(18.75rem, 3.864rem + 74.43vw, 59.688rem);
+    margin-top: 70px;
     
 }
 .people-container {
@@ -364,38 +516,58 @@ body{
 }
 .img-name{
     font-weight: 500;
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: clamp(0.5rem, 0.236rem + 1.32vw, 1.25rem);
     margin: 12px 0 5px 0;
 }
 .img__indent{
     margin-left: 12px;
 }
 .img-subname{
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: clamp(0.375rem, 0.199rem + 0.88vw, 0.875rem);
     font-weight: 400;
     opacity: 0.5;
 }
 
 .people-img__picture1 {
+    // width: 558px;
+    width: clamp(7.188rem, -2.549rem + 48.68vw, 34.875rem);
     position: absolute;
     top: -63px;
     right: 0;
+    > img{
+        width: 100%;
+    }
 }
 .people-img__picture2{
+    // width: 321px ;
+    width: clamp(4.688rem, -0.719rem + 27.03vw, 20.063rem);
     position: absolute;
-    top: 130px;
+    // top: 130px;
+    top: clamp(-1.875rem, -5.391rem + 17.58vw, 8.125rem);
     left: 0;
+      > img{
+        width: 100%;
+    }
 }
 .people-img__picture3{
+    // width: 321px ;
+    width: clamp(4.688rem, -0.719rem + 27.03vw, 20.063rem);
     position: absolute;
     top: 450px;
-    left: 321px;
+    top: clamp(3.75rem, -4.821rem + 42.86vw, 28.125rem);
+    left: 300px;
+    > img {
+        width: 100%;
+    }
 }
 
 // video
 
 .videos {
-    padding-bottom: 143px;
+    // padding-bottom: 143px;
+    padding-bottom: clamp(3.125rem, 1.011rem + 10.57vw, 8.938rem);
 }
 
 .video-item {
@@ -403,6 +575,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 50px 20px;
+    padding: clamp(0.938rem, 0.142rem + 3.98vw, 3.125rem) 20px;
     align-items: center;
     border: 0.5px solid rgba(255, 255, 255, .4);
     border-top: none;
@@ -416,6 +589,7 @@ body{
        background-color: rgba(255, 255, 255, .1);
        border-radius: 3px;
        padding: 50px 5px;
+       padding: clamp(0.938rem, 0.142rem + 3.98vw, 3.125rem) 5px;
        .text{
         scale: 1.1;
        }
@@ -424,19 +598,21 @@ body{
 }
 
 .video-number {
-    font-size: 25px;
+    // font-size: 25px;
+    font-size: clamp(0.625rem, 0.284rem + 1.7vw, 1.563rem);
     opacity: 0.34;
     font-weight: 600;
 }
 
 .text {
     text-align: left ;
-    width: 485px;
+    max-width: 485px;
     transition: all .5s;
 }
 
 .video-title {
-    font-size: 50px;
+    // font-size: 50px;
+    font-size: clamp(1.125rem, 0.398rem + 3.64vw, 3.125rem);
     font-weight: 400;
     letter-spacing: 0.83px;
 }
@@ -444,7 +620,16 @@ body{
 .video-subtext {
     letter-spacing: 0.5px;
     opacity: 0.5;
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: clamp(0.5rem, 0.364rem + 0.68vw, 0.875rem);
     font-weight: 400;
     margin-top: 10px;
 }
+.video-arrow{
+    width: clamp(0.625rem, -0.284rem + 4.55vw, 3.125rem);
+    img{
+        width: 100%
+    }
+}
+
+@import './adaptive';

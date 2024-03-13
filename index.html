@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=0" />
     <title>Workout</title>
     <link rel="stylesheet" href="css/normilizer-curse.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -18,12 +18,16 @@
             <a class="nav-btn-link" href="#!">PRICING</a>
             <a class="nav-btn-link" href="#!">LOGIN</a>
           </div>
+          <button class="burger">
+            <span></span>
+          </button>
         </nav>
         <div class="header-inner">
           <div class="header-text">
-            <p class="header-message">
+              <p class="header-message">
               High Intensity workout to burn calories
-            </p>
+              </p>
+            
             <h1 class="header-title">Cardio Exercise</h1>
             <p class="header-subtext">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -32,27 +36,29 @@
             <a href="" class="header-link-green link-green">Get Started</a>
             <a href="" class="header-link-black">Preview</a>
           </div>
-          <img
+          <div class="header-img-wrapper">
+            <img
             src="images/header/image_1-removebg (2).png"
             alt=""
             class="header-img"
           />
-          <div class="header-blocks">
-            <div class="header-block header-block__yellow">38:14</div>
-            <div class="header-block header-block__red">165</div>
           </div>
+        </div>
+        <div class="blocks">
+          <div class="header-block header-block__yellow">38:14</div>
+          <div class="header-block header-block__red">165</div>
         </div>
       </div>
     </header>
     <main class="main">
+
       <section class="exersises">
         <div class="container">
           <div class="exersises-top">
             <h3 class="exersises-title">Popular Exercises</h3>
             <a class="exersises-more" href="">SEE MORE EXERCISES</a>
           </div>
-          <div class="exersises-cards">
-
+           <div class="exersises-cards"> 
             <div class="exersises-card">
               <a class="exersises-card-inner" href="#!">
                 <img class="card-img" src="images/cards/card1.png" alt="" />
@@ -95,7 +101,7 @@
                 <p class="card-subtext">250 est calories</p>
               </a>
             </div>
-          </div>
+          </div> 
         </div>
       </section>
 
@@ -106,7 +112,9 @@
             <p class="program-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing.</p>
             <a href="#!" class="program-link link-green">Get Started</a>
           </div>
-          
+          <div class="program-img-wrapper">
+            <img class="program-img" src="images/yellow-spot.png" alt="">
+          </div>
         </div>
       </section>
 

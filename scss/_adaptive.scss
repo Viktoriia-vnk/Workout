@@ -1,0 +1,104 @@
+
+@media (max-width: 1150px){
+  .header-img{
+    display: block;
+  }
+  .exersises-cards{
+    gap: 45px;
+  }
+  .program-img-wrapper{
+    width: clamp(9.375rem, -1.468rem + 54.22vw, 37.5rem) ;
+    top: clamp(10.625rem, 2.794rem + 39.16vw, 30.938rem);
+  }
+      
+}
+@media (max-width: 1229.98px) {
+    .header-blocks{
+        display: none;
+    }
+    .blocks{
+        display: flex;
+    }
+    .header-img {
+        max-width: 150%;
+        top: clamp(0.313rem, -1.116rem + 7.14vw, 4.375rem);
+        right: clamp(-0.563rem, -0.76rem + 0.99vw, 0rem);
+    }
+    .people-img__picture1{
+        padding: 0 15px 0 15px;
+    }
+     .people-img__picture2{
+        padding: 0 0 0 15px;
+    }
+        
+}
+  
+@media (max-width: 1169px) {
+    .exersises-cards {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+@media(max-width: 1024.98px) {
+    .people-img__picture3 {
+        left: 288px;
+        left: clamp(13.875rem, 1.516rem + 25.78vw, 18rem);
+    }
+}
+@media (max-width: 767.98px) {
+    .header-nav-btn {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .exersises-cards{
+        justify-content: center;
+        gap: 25px;
+    }
+     .card-img{
+        width: clamp(10.438rem, 1.241rem + 45.98vw, 23.313rem);
+    }
+    .card-name{
+        font-size: clamp(0.938rem, -0.625rem + 7.81vw, 3.125rem);
+    }
+   .exersises-card-inner{
+    &::after {
+       top: 203px;
+       display: none;
+    }
+}
+.program{
+    &::before{
+        height: 233px;
+    }
+}
+}
+@media(max-width: 500px) {
+    .blocks{
+        display: none;
+    }
+}
+@media (max-width:440px) {
+    .header-message {
+        scale: 0.8;
+        margin-left: -16px;
+    }
+
+    .burger {
+        height: 18px;
+        width: 18px;
+
+        &::after,
+        &::before,
+        span {
+            width: 18px;
+            height: 1px;
+        }
+    }
+}
+@media(max-width: 426px) {
+     .people-img__picture3 {
+    left: 115px;
+ }
+}
